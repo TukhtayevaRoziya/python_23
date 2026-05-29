@@ -4,6 +4,9 @@
 # Sequence Data - list, tuple, range
 # Mapping data - dict
 # Set Types - set, frozenset
+# Boolean - bool
+# Binary Types:	bytes, bytearray, memoryview
+# None Type:	NoneType
 
 # type() = typeof()
 
@@ -75,3 +78,37 @@ thisset.clear() # it will clear all items from the set
 del thisset # it will remove entire set
 
 print(thisset)
+
+# frozenset it is just like set inaddition you cannot add nor remove anything from it
+
+fs = frozenset({1,2,3,4})
+cm = fs.copy() # coping the set
+print(cm)
+
+a = frozenset({1, 2, 3, 4})
+b = frozenset({3, 4, 5})
+print(a.difference(b)) # it will return the difference of these sets
+print(a - b) # same here:)))))
+
+a = frozenset({1, 2, 3, 4})
+b = frozenset({3, 4, 5})
+print(a.intersection(b)) # it will show same values 
+print(a & b) # same here:))))
+
+
+a = frozenset({1, 2})
+b = frozenset({3, 4})
+c = frozenset({2, 3})
+print(a.isdisjoint(b)) # it will say are there any same value in 2 sets return true nor false
+print(a.isdisjoint(c)) 
+
+
+a = frozenset({1, 2})
+b = frozenset({1, 2, 3})
+print(a.issubset(b)) # it means a is the main set and b is the part of it if its true then it will return true or false
+print(a <= b) # same here
+print(a < b) # same here
+
+# Bool
+
+# same as JS
