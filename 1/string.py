@@ -36,3 +36,9 @@ txt = f"My name is John, I am {age}"
 print(txt)
 
 # f-string will allow you to use variables or any outside thing in the string inside
+
+
+smth = 'Hiiii'
+smth2 = 'Hellooooo'
+all_smth = f'{smth} {smth2}'
+print(all_smth)
