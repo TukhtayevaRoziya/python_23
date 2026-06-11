@@ -53,15 +53,15 @@
 #         print(y)
         
         
-ages = [5,2,4,6,7,4,7,5,3,3,3,3]
+# ages = [5,2,4,6,7,4,7,5,3,3,3,3]
 
-unique = []
+# unique = []
 
-for x in ages:
-    if x not in unique:
-        unique.append(x)
+# for x in ages:
+#     if x not in unique:
+#         unique.append(x)
         
-print(unique)
+# print(unique)
 
 # for a in ages:
 #     if  ages.count(a) !=1:
@@ -92,10 +92,153 @@ print(unique)
 
 # dictionaries
 
-costumer = {
-    "name":"Tukhtayeva Roziya",
-    "age": 18,
-    "is_verified": True
-}
+# costumer = {
+#     "name":"Tukhtayeva Roziya",
+#     "age": 18,
+#     "is_verified": True
+# }
 
-print(costumer["age"])
+# print(costumer["age"])
+# print(costumer.get("age1", 20)) # second thing is if the key doesn't have then this thing will be default value
+# costumer["name"]='Roziya'
+# costumer['birthday'] = '23.08.2008'
+# print(costumer["birthday"])
+
+# difference between [''] vs get()
+# it does not yell at us if we want to get non existing key
+
+# def number_to_letter(num):
+#     match num:
+#         case 1:
+#             return 'Bir'
+#         case 2:
+#             return "Ikki"
+#         case 3:
+#             return "Uch"
+#         case 4: 
+#             return "Tort"
+#         case 5:
+#             return "Besh"
+#         case 6:
+#             return "Olti"
+#         case 7:
+#             return "Yetti"
+#         case 8:
+#             return 'Sakkiz'
+#         case 9:
+#             return 'Toqqiz'
+#         case 0:
+#             return "Nol"
+        
+# print(number_to_letter(2))
+
+# n = input("Give me thousand ")
+# total = []
+# for num in n:
+#    print(number_to_letter(int(num)))
+#    total.append( number_to_letter(int(num)))
+   
+# print(total)
+
+# inp = input("Give me thoudsand ")
+
+# digits_mapping = {
+#     "1":"Bir ",
+#     "2":"Ikki ",
+#     "3":"Uch ",
+#     "4":"To'rt ",
+#     "5":"Besh ",
+#     "6":"Olti ",
+# }
+
+# output=""
+
+# for n in inp:
+#     output +=digits_mapping.get(n,'!')
+    
+# print(output)
+
+
+# inp = input('How was your day? ')
+# word = inp.split(" ")
+# emojis={
+#     ":)":"😄",
+#     ":(":"😓",
+#     "<3":"💚"
+# }
+# output=""
+
+# for n in word:
+#     output+=emojis.get(n,n) +" "
+    
+# print(output)
+
+# inp = input('How was your day? ')
+
+# def emoji(inp):
+#     word = inp.split(" ")
+#     emojis={
+#         ":)":"😄",
+#         ":(":"😓",
+#         "<3":"💚"
+#     }
+#     output=""
+
+#     for n in word:
+#         output+=emojis.get(n,n) +" "
+#     return output
+    
+# print(emoji(inp))
+
+
+
+
+# try:
+#     age = int(input("Age: "))
+#     avarage_p = 100/age
+#     print(age)
+# except ZeroDivisionError:
+#     print("Age can not be 0.")
+# except ValueError:
+#     print("Please enter number")
+
+# class Chess:
+#     def __init__(self,x,y):
+#         self.x = x
+#         self.y = y
+#     def uzb(self):
+#         return "Nodirbek Abdusattorov"
+#     def goat(self):
+#         print("Magus Carlson")
+    
+# chess1 = Chess(10,20)
+# chess1.smth ='STHHHH'
+# chess1.goat()
+# print(chess1.x)
+
+
+# class Person:
+#     def __init__(self,name):
+#         self.name = name
+#     def talk(self):
+#         print(f"Hii wassup, I am {self.name}")
+        
+# person1 = Person("Roziya")
+
+# person1.talk()
+
+# classes are just like C++ I am seeing no difference)
+
+
+class Action:
+    def walk(self):
+        print("Walking")
+        
+class Cat(Action):
+    pass
+
+class Dog(Action):
+    pass
+
+c = Cat()
+c.walk()
